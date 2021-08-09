@@ -1,0 +1,20 @@
+local ply = game:GetService("Players").LocalPlayer
+local ResourceHP = require(game:GetService("ReplicatedStorage").Harvestables.HarvestableEntry)
+
+--[[Teleport to Cave
+ply.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Cave.Bottom.Ceiling.CFrame]]
+
+--[[Teleport to Desert
+ply.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Desert.Triceratops.CFrame]]
+
+--[[Teleport to Tundra
+ply.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Tundra.Snowman.CFrame]]
+
+--[[Teleport to Mountain Rat
+ply.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Moutain.Rat.CFrame]]
+
+--[[Teleport to Moutain Bone
+ply.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Map.Moutain["Meshes/Bone_low"].CFrame.x + 30,game:GetService("Workspace").Map.Moutain["Meshes/Bone_low"].CFrame.y - 100,game:GetService("Workspace").Map.Moutain["Meshes/Bone_low"].CFrame.z)]]
+
+ply.Character.Humanoid.WalkSpeed = 80
+ResourceHP['prototype']['HP'] = 1
